@@ -24,7 +24,7 @@ Los datos de entrada y salida se almacenan en MongoDB.
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/usuario/proyecto.git
+git clone https://github.com/JD-231/Proyecto_progra.git
 ```
 
 2. Instala las dependencias:
