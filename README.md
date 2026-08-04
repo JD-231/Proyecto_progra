@@ -45,7 +45,6 @@ python app.py
 Proyecto/
 │── app.py
 │── requirements.txt
-│── README.md
 │── static/
 │── templates/
 │── models/
