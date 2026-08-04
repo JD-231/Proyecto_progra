@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f2f0f1;
+    color:#d67ab5;
+}
+
+/* pagina principal*/
+
+.header{
+    background:#efb5df;
+    color:white;
+    padding:20px 50px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    padding:70px 10%;
+    flex-wrap:wrap;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+}
+
+/* botones */
+
+button{
+
+    background:#f041b2;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+
+button:hover{
+
+    background:#e475b4;
+    transform:scale(1.05);
+
+}
+
+/* tarjetas*/
+
+.cards1,
+.cards2{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+    padding:50px 10%;
+}
+
+.card{
+
+    display:block;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-decoration:none;
+    color:#ed99d2;
+    box-shadow:0 10px 25px rgba(235,152,210,.5);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:#e990c5;
+    color:white;
+}
+
+/* footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#f3afe6;
+    color:white;
+}
+
+/* sistema del chatbot */
+
+
+.app-container{
+    display:flex;
+    min-height:100vh;
+}
+
+/*barra lateral, indice de opciones*/
+
+
+.sidebar{
+
+    width:250px;
+    height:100vh;
+    background:#efb5df;
+    padding:20px;
+    position:fixed;
+    left:0;
+    top:0;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar h2{
+    color:white;
+    margin-bottom:30px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#f041b2;
+}
+
+/* contenido del chat*/
+
+.contenido{
+    margin-left:250px;
+    flex:1;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.titulo-modulo{
+    font-size:40px;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+/* area del chat, mensajes*/
+
+
+.chat-container{
+    width:100%;
+    max-width:900px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/*texto */
+
+
+textarea{
+    width:800px;
+    max-width:90%;
+    height:250px;
+    padding:20px;
+    font-size:18px;
+    border-radius:12px;
+    border:2px solid #ff4fa3;
+    resize:none;
+}
+
+/* respuesta */
+
+
+.respuesta{
+
+
+    width:800px;
+    max-width:90%;
+    min-height:200px;
+    margin-top:30px;
+    padding:20px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+.respuesta p{
+
+    color:#ff4fa3;
+    font-weight:bold;
+
+}
+
+/* volver */
+
+
+.btn-volver{
+    margin-top:40px;
+    color:#e42e8c;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.btn-volver:hover{
+    color:#f041b2;
+
+}
