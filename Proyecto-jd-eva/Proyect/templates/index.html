@@ -1,121 +1,110 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <title>MetaJuan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+    
 </head>
+
 <body>
 
-    <header>
-        <h1>Bienvenido a mi página web</h1>
+    <header class="header">
+
+        <nav class="navbar">
+
+            <h2 class="logo">ChatBot</h2>
+
+        </nav>
+
     </header>
 
     <main>
-        <p>Esta es una página creada con HTML, CSS y JavaScript.</p>
 
-        <button onclick="saludar()">
-            Haz clic aquí
-        </button>
+        <!-- Hero -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <h1 id="bienvenida">
+                    Bienvenido
+                </h1>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="https://picsum.photos/500/350"
+                     alt="Imagen principal">
+
+            </div>
+
+        </section>
+
+        <!-- Tarjetas -->
+
+        <section class="cards">
+
+            <a href="/resumen" class="card">
+
+                <h3>Resumen</h3>
+                <p>Resumir textos.</p>
+
+            </a>
+
+            <a href="/corrector" class="card">
+
+                <h3>Corrección</h3>
+                <p>Corregir palabras u oraciones.</p>
+
+            </a>
+
+            <a href="/emociones" class="card">
+
+                <h3>Emociones</h3>
+                <p>Detección de emociones.</p>
+
+            </a>
+
+            <a href="/idioma" class="card">
+
+                <h3>Traducción</h3>
+                <p>Traductor de textos.</p>
+
+            </a>
+
+            <a href="/preguntas" class="card">
+
+                <h3>Preguntas</h3>
+                <p>Respuestas a sus preguntas.</p>
+
+            </a>
+
+        </section>
+
     </main>
 
-    <script src="script.js"></script>
+    <footer class="footer">
 
-</body>
-</html> -->
+        <h3>MetaJuan</h3>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-
-    <!-- Fuente de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-
-<body>
-
-    <!-- Barra de navegación -->
-    <header class="header">
-        <nav class="navbar">
-            <h2 class="logo">ChatBot</h2>
-
-            <!-- <ul class="menu">
-                <li><a href="inde.html">Inicio</a></li>
-                <li><a href="#">Resumir</a></li>
-                <li><a href="#">Corrección</a></li>
-                <li><a href="#">Emociones</a></li>
-                <li><a href="#">Traducción</a></li>
-                <li><a href="#">Preguntas & Respuestas</a></li>
-            </ul> -->
-        </nav>
-    </header>
-
-    <!-- Sección principal -->
-    <section class="hero">
-
-        <div class="hero-text">
-
-        <h1 id="bienvenida">Bienvenido</h1>
-
-
-        </div>
-
-        <div class="hero-image">
-            <img src="https://picsum.photos/500/350" alt="Imagen de ejemplo">
-        </div>
-
-    </section>
-
-    <!-- Tarjetas -->
-    <section class="cards1">
-
-        <a href="/resumen" class="card">
-            <h3>Resumen</h3>
-            <p>Resumir textos.</p>
-        </a>
-
-        <a href="/corrector" class="card">
-            <h3>Corrección</h3>
-            <p>Corregir palabras u oraciones.</p>
-        </a>
-
-
-        <a href="/emociones" class="card">
-            <h3>Emociones</h3>
-            <p>Detección de emociones.</p>
-        </a>
-
-        
-    </section>
-    <section class="cards2">
-        <a href="/idioma" class="card">
-            <h3>Traducción</h3>
-            <p>Traductor de textos.</p>
-        </a>
-
-
-        <a href="/preguntas" class="card">
-            <h3>Preguntas</h3>
-            <p>Respuestas a sus preguntas.</p>
-    </a>
-
-    </section>
-    <!-- Pie de página -->
-    <footer>
-        <p>MetaJuan</p>
     </footer>
 
-    <script src="script.js"></script>
-
 </body>
-</html>
 
+</html>
