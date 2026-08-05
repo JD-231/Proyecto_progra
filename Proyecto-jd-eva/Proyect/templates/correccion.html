@@ -4,105 +4,64 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Corrección</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
-
 <body>
 
+    <div class="app-container">
 
-<div class="app-container">
+        <aside class="sidebar">
 
+            <h2>ChatBot</h2>
 
-    <!-- BARRA LATERAL -->
+            <a href="/">Inicio</a>
+            <a href="/resumen">Resumen</a>
+            <a href="/corrector">Corrección</a>
+            <a href="/emociones">Emociones</a>
+            <a href="/idioma">Traducción</a>
+            <a href="/preguntas">Preguntas</a>
 
-    <aside class="sidebar">
+        </aside>
 
-        <h2>ChatBot</h2>
+        <main class="contenido">
 
+            <h1 class="titulo-modulo">
+                Módulo de Corrección
+            </h1>
 
-        <a href="/">Inicio</a>
-                
-        <a href="/resumen">Resumen</a>
+            <div class="chat-container">
 
-        <a href="/corrector">Corrección</a>
+                <textarea
+                    id="texto"
+                    placeholder="Agrega el texto que quieres corregir..."></textarea>
 
-        <a href="/emociones">Emociones</a>
+                <button onclick="corrector()">
+                    Corregir
+                </button>
 
-        <a href="/idioma">Traducción</a>
+                <div class="respuesta">
 
-        <a href="/preguntas">Preguntas</a>
+                    <h3>Respuesta del ChatBot:</h3>
 
+                    <p id="resultado">...</p>
 
-
-    </aside>
-
-
-
-
-    <!-- CONTENIDO -->
-
-
-    <main class="contenido">
-
-
-        <h1 class="titulo-modulo">
-            Módulo de Corrección
-        </h1>
-
-
-
-        <div class="chat-container">
-
-
-            <textarea 
-            id="texto"
-            placeholder="Agrega el texto que quieres corregir..."></textarea>
-
-
-
-            <button onclick="corrector()">
-                Corregir
-            </button>
-
-
-
-
-            <div class="respuesta">
-
-
-                <h3>
-                    Respuesta del ChatBot:
-                </h3>
-
-
-                <p id="resultado">
-                    
-                </p>
-
+                </div>
 
             </div>
 
+        </main>
 
+    </div>
 
-        </div>
-
-
-
-    </main>
-
-
-</div>
-
-
+    <script src="{{ url_for('static', filename='js/corrector.js') }}"></script>
 
 </body>
-<script src="{{ url_for('static', filename='js/corrector.js') }}"></script>
 
 </html>
