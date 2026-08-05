@@ -12,6 +12,20 @@ Este proyecto es una aplicación web desarrollada con Flask que utiliza modelos 
 
 Los datos de entrada y salida se almacenan en MongoDB.
 
+## Uso
+
+### Preguntas y respuestas
+
+Para utilizar esta función, escriba primero el texto que servirá como contexto y luego agregue el comando `/pregunta` seguido de la consulta.
+
+Ejemplo:
+
+```text
+La biodiversidad de Costa Rica es muy importante para el planeta.
+
+/pregunta ¿Por qué es importante la biodiversidad?
+```
+
 ## Tecnologías utilizadas
 - Python
 - Flask
