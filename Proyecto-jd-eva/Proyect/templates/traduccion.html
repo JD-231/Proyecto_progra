@@ -4,103 +4,67 @@
 <head>
 
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Traducción</title>
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
-
 <body>
 
-
 <div class="app-container">
-
 
     <!-- BARRA LATERAL -->
 
     <aside class="sidebar">
 
         <h2>ChatBot</h2>
-
-
-        <a href="/">Inicio</a>
-                
+        <a href="/">Inicio</a>     
         <a href="/resumen">Resumen</a>
-
         <a href="/corrector">Corrección</a>
-
         <a href="/emociones">Emociones</a>
-
         <a href="/idioma">Traducción</a>
-
         <a href="/preguntas">Preguntas</a>
 
-    
-
-
     </aside>
-
-
-
 
     <!-- CONTENIDO -->
 
     <main class="contenido">
 
-
         <h1 class="titulo-modulo">
             Módulo de Traducción
         </h1>
 
-
-
-
         <div class="chat-container">
-
 
             <textarea
             id="texto" 
             placeholder="Agregar texto..."></textarea>
 
-
             <button onclick="idioma()">
                 Traducir
             </button>
 
-
-
-
             <div class="respuesta">
-
 
                 <h3>
                     Respuesta del ChatBot:
                 </h3>
 
-
                 <p id="resultado">
                 </p>
 
-
             </div>
-
-
 
         </div>
 
-
-
     </main>
-
 
 </div>
 
-
+<script src="{{ url_for('static', filename='js/idioma.js') }}"></script>
 
 </body>
-<script src="{{ url_for('static', filename='js/idioma.js') }}"></script>
+
 </html>
