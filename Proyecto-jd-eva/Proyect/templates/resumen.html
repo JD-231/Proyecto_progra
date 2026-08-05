@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumen</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 </head>
 
 <body>
@@ -12,6 +15,7 @@
 <div class="app-container">
 
     <!-- Barra lateral -->
+
     <aside class="sidebar">
 
         <h2>ChatBot</h2>
@@ -22,14 +26,15 @@
         <a href="/emociones">Emociones</a>
         <a href="/idioma">Traducción</a>
         <a href="/preguntas"> Preguntas</a>
-    
 
     </aside>
 
     <!-- Contenido -->
     <main class="contenido">
 
-        <h1 class="titulo-modulo">Módulo de Resumen</h1>
+        <h1 class="titulo-modulo">
+            Módulo de Resumen
+        </h1>
 
         <div class="chat-container">
 
@@ -42,7 +47,10 @@
             </button>
 
             <div class="respuesta">
-                <h3>Respuesta del ChatBot:</h3>
+
+                <h3>
+                    Respuesta del ChatBot:
+                </h3>
 
                 <p id="resultado"></p>
         </div>
@@ -53,7 +61,8 @@
 
 </div>
 
-</body>
 <script src="{{ url_for('static', filename='js/resumen.js') }}"></script>
-</html>
 
+</body>
+
+</html>
