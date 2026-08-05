@@ -46,8 +46,9 @@ Proyecto/
 │── app.py
 │── requirements.txt
 │── static/
+│── rutas/
 │── templates/
-│── models/
+│── modelos/
 └── database/
 ```
 
